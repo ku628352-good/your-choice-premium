@@ -1,18 +1,22 @@
-: <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Choice Premium | Original Products in Pakistan</title>
+    <title>Your Choice Premium 💎</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
+        - {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
         body {background: #f8f9fa; color: #222;}
         .navbar {background: #111; color: #fff; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100;}
-        .logo {font-size: 24px; font-weight: 700; color: #FFD700;}
-        .logo span {color: #fff;}
+        .logo {display: flex; align-items: center; gap: 10px;}
+        .logo img {height: 40px; width: auto; object-fit: contain;}
+        .logo-text {font-size: 24px; font-weight: 700; color: #FFD700;}
+        .logo-text span {color: #fff;}
         .cod-badge {background: #25D366; padding: 6px 12px; border-radius: 20px; font-size: 14px; font-weight: 600;}
-        .hero {background: linear-gradient(135deg, #000 0%, #2d2d2d 100%); color: white; text-align: center; padding: 50px 20px;}
+        .hero {background: linear-gradient(135deg, #000 0%, #2d2d2d 100%); color: white; text-align: center; padding: 0; position: relative;}
+        .hero-banner {width: 100%; max-height: 400px; object-fit: cover; display: block;}
+        .hero-content {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; padding: 20px; background: rgba(0,0,0,0.5);}
         .hero h1 {font-size: 32px; margin-bottom: 10px;}
         .hero p {color: #FFD700; font-size: 18px; font-weight: 500;}
         .container {max-width: 1200px; margin: 40px auto; padding: 0 20px;}
@@ -38,22 +42,32 @@
         .trust-item h4 {margin: 10px 0 5px 0; font-size: 16px;}
         .trust-item p {font-size: 13px; color: #666;}
         .footer {background: #111; color: #aaa; text-align: center; padding: 30px 20px; margin-top: 40px;}
-        .footer .logo {margin-bottom: 15px; display: inline-block;}
+        .footer .logo-footer {display: flex; justify-content: center; align-items: center; gap: 10px; margin-bottom: 15px;}
+        .footer .logo-footer img {height: 35px; width: auto;}
+        .footer .logo-text {font-size: 20px;}
         @media (max-width: 768px) {
-            .hero h1 {font-size: 26px;}
+            .hero h1 {font-size: 24px;}
+            .hero p {font-size: 16px;}
             .section-title {font-size: 24px;}
+            .hero-content {position: relative; transform: none; top: 0; left: 0; background: #000;}
         }
     </style>
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">Your<span>Choice</span> Premium</div>
-        <div class="cod-badge">Cash on Delivery</div>
+        <div class="logo">
+            <img src="https://i.ibb.co/GQx8MCvH/IMG-20260505-WA0005.jpg" alt="Your Choice Premium 💎 Logo">
+            <div class="logo-text">Your<span>Choice</span> Premium 💎</div>
+        </div>
+        <div class="cod-badge">💵 Cash on Delivery</div>
     </nav>
 
     <section class="hero">
-        <h1>Pakistan's #1 Premium Store</h1>
-        <p>Flat 50% OFF | Free Delivery All Over Pakistan</p>
+        <img src="https://i.ibb.co/d4zk4VGs/IMG-20260504-WA0060.jpg" alt="Your Choice Premium Banner" class="hero-banner">
+        <div class="hero-content">
+            <h1>Pakistan's 1 Premium Store</h1>
+            <p>Flat 50% OFF | Free Delivery All Over Pakistan</p>
+        </div>
     </section>
 
     <div class="container">
@@ -63,7 +77,7 @@
             <div class="card">
                 <div class="card-img">
                     <span class="badge">BEST SELLER</span>
-                    <img src="images (8).jpg" alt="T900 Ultra Smart Watch">
+                    <img src="https://i.ibb.co/1YKXykKq/watchjpg.jpg" alt="T900 Ultra Smart Watch 2026">
                 </div>
                 <div class="card-body">
                     <h3>T900 Ultra Smart Watch 2026</h3>
@@ -75,8 +89,8 @@
                         <li>✅ 7 Days Battery Life</li>
                     </ul>
                     <div class="price">
-                        <span class="new-price">Rs 5,499</span>
-                        <span class="old-price">Rs 11,000</span>
+                        <span class="new-price">Rs 1,499</span>
+                        <span class="old-price">Rs 5,000</span>
                     </div>
                     <button class="btn" onclick="window.open('https://wa.me/923265846339?text=Assalam o Alaikum! T900 Ultra Watch order karni hai. Rs 5,499')">Order on WhatsApp</button>
                 </div>
@@ -85,7 +99,7 @@
             <div class="card">
                 <div class="card-img">
                     <span class="badge">LIMITED STOCK</span>
-                    <img src="images (9).jpg" alt="Airpods Pro 2">
+                    <img src="https://i.ibb.co/4wmMhKk4/airpods.jpg" alt="Airpods Pro 2">
                 </div>
                 <div class="card-body">
                     <h3>Airpods Pro 2 - Titanium</h3>
@@ -107,10 +121,10 @@
             <div class="card">
                 <div class="card-img">
                     <span class="badge">IMPORTED</span>
-                    <img src="images (10).jpg" alt="Dubai Perfume">
+                    <img src="https://i.ibb.co/KcHC1b0L/purfume.jpg" alt="Dubai Perfume">
                 </div>
                 <div class="card-body">
-                    <h3>Dubai Imported Perfume 100ML</h3>
+                    <h3>Taster Imported  Pufume</h3>
                     <div class="rating">⭐⭐⭐⭐⭐ 4.9 | 3,104 Reviews</div>
                     <ul class="features">
                         <li>✅ Long Lasting 12+ Hours</li>
@@ -119,13 +133,42 @@
                         <li>✅ For Men & Women</li>
                     </ul>
                     <div class="price">
-                        <span class="new-price">Rs 4,500</span>
-                        <span class="old-price">Rs 9,000</span>
+                        <span class="new-price">Rs 1,500</span>
+                        <span class="old-price">Rs 3,000</span>
                     </div>
                     <button class="btn" onclick="window.open('https://wa.me/923265846339?text=Assalam o Alaikum! Dubai Perfume order karna hai. Rs 4,500')">Order on WhatsApp</button>
                 </div>
             </div>
-
+                            <!-- Product 5: Rose Bouquet + Dairy Milk -->
+            <div class="product-card">
+                <span class="product-badge">NEW</span>
+                <img src="https://i.ibb.co/n9RGCF1/red-roses-dairy-milk-chocolate-bouquet-jpg.jpg" alt="Rose Bouquet with Dairy Milk" class="product-image" style="width: 100%; height: 220px; object-fit: cover; border-radius: 8px 8px 0 0;">
+                <div class="product-info">
+                    <h3 class="product-title">Rose Bouquet + Dairy Milk</h3>
+                    <div class="product-rating">⭐⭐⭐⭐ 4.8 | 2,156 Reviews</div>
+                    <div class="product-features">
+                        <p>✅ Fresh Imported Roses</p>
+                        <p>✅ Original Dairy Milk Chocolates</p>
+                        <p>✅ Premium Bouquet Wrapping</p>
+                        <p>✅ Perfect Gift for All Occasions</p>
+                    </div>
+                    <div class="product-price">
+                        <span class="new-price">Rs 2,199</span>
+                        <span class="old-price">Rs 3,200</span>
+                    </div>
+                    <button class="product-btn" style="background: #25D366; color: white; width: 100%; padding: 12px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;" onclick="orderOnWhatsApp('Rose Bouquet + Dairy Milk', '2499')">Order on WhatsApp</button>
+                </div>
+            </div>
+                </div>
+            </div>
+                </div>
+            </div>    
+                </div>
+            </div>
+                </div>
+            </div>
+                </div>
+            </div>
         </div>
 
         <div class="trust">
@@ -140,4 +183,21 @@
             <div class="trust-item">
                 <h4>↩️ 7 Day Return</h4>
                 <p>No Questions Asked</p>
-           
+            </div>
+            <div class="trust-item">
+                <h4>✅ 100% Original</h4>
+                <p>Premium Quality Guaranteed</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="logo-footer">
+            <img src="https://i.ibb.co/GQx8MCvH/IMG-20260505-WA0005.jpg" alt="Your Choice Premium Logo">
+            <div class="logo-text">Your<span>Choice</span> Premium</div>
+        </div>
+        <p>© 2026 Your Choice Premium. All Rights Reserved.</p>
+        <p style="margin-top:10px; font-size:13px;">For Orders & Complaints: 03265846339</p>
+    </footer>
+</body>
+</html>
